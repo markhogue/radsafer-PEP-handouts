@@ -139,4 +139,15 @@ mcnp_sdef_erg_line("Eu-154",
 # spreadsheet
 mcnp_sdef_erg_hist()  # follow directions in Console
 
+
+# Time permitting, import Origen_Fulcrum_out.xlsx
+# identify all the energies
+E_MeV <- c(Origen_Fulcrum_out$`bin Emax`, 
+           Origen_Fulcrum_out$`bin Emin`[112])
+p_s <-  Origen_Fulcrum_out$`1 year p/s`         
+
+mcnp_sdef_erg_hist(entry_mode = "read", 
+                   E_MeV = E_MeV,
+                   bin_prob = p_s,
+                   log_plot = 2)
 # and, thank you!

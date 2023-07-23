@@ -2,10 +2,11 @@
 #   Show Rstudio features
 #   Use R as a calculator
 
-# *** Navigate around Rstudio - use Tools / Global Options / Pane Layout, 
+# *** Navigate around Rstudio - 
+#             use Tools / Global Options / Pane Layout, 
 # then, / Appearance
 # then, / Packages
-
+# At the Packages pane, install readxl.
 
 # first - type in the Console then also run in
 # the Source panel (Run button or ctrl-enter)
@@ -36,6 +37,7 @@ log10(10000)
 # base e
 exp(-log(2) * 10/5.27)
 
+2^-(10/5.27)
 
 # make a set of numbers
 # ---------------------------------------------------
